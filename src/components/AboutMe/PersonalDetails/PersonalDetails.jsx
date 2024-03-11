@@ -50,6 +50,13 @@ const PersonalDetails = () => {
     setRotateY(0);
   };
 
+  const goToContact = () => {
+    const contactSection = document.getElementById("CONTACT");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <motion.div
       className="card-border"
@@ -94,33 +101,36 @@ const PersonalDetails = () => {
             </motion.p>
           </motion.div>
           <motion.div className="buttons" variants={variants}>
-            <a href="#CONTACT">
-              <motion.button
-                variants={variants}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                Let's talk
-              </motion.button>
-            </a>
-            <a href="https://www.linkedin.com/in/s-varshith/" target="_blank">
-              <motion.button
-                variants={variants}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                LinkedIn
-              </motion.button>
-            </a>
-            <a href="https://flowcv.com/resume/swk2omj4at" target="_blank">
-              <motion.button
-                variants={variants}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                My Resume
-              </motion.button>
-            </a>
+            <motion.button
+              variants={variants}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              onClick={goToContact}
+            >
+              Let's talk
+            </motion.button>
+
+            <motion.button
+              variants={variants}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              onClick={() =>
+                window.open("https://www.linkedin.com/in/s-varshith/", "_blank")
+              }
+            >
+              LinkedIn
+            </motion.button>
+
+            <motion.button
+              variants={variants}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              onClick={() =>
+                window.open("https://flowcv.com/resume/swk2omj4at", "_blank")
+              }
+            >
+              My Resume
+            </motion.button>
           </motion.div>
         </motion.div>
       </div>
