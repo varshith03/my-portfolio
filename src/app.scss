@@ -1,0 +1,64 @@
+// global color variables
+$black: #000 !default;
+$background-color : #0c0c1d;
+$text-color:lightgrey;
+$green:#2ede98;
+
+//custom scollbar
+::-webkit-scrollbar {
+    width: 10px; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: $green; 
+    border-radius: 10px; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff; 
+  }
+
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans",sans-serif;
+}
+
+body{
+    background-color: $background-color;
+    color: $text-color;
+}
+
+a{
+    text-decoration: none;
+    color: $text-color;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: center;
+    overflow-x: hidden;
+}
+
+//resuing this responsive design
+@mixin mobile{
+    @media (max-width:800px){
+        @content
+    }
+}
+
+@mixin  tablet {
+    @media (max-width:1368px){
+        @content
+    }
+}

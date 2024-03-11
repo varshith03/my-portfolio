@@ -1,0 +1,115 @@
+@import "src/app.scss";
+
+.skills {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border: 15px solid $green;
+    border-radius: 15px;
+
+    @include mobile{
+      padding: 5px;
+    }
+
+    .wrapper{
+        margin-top: 10px;
+    }
+  
+    h2 {
+      font-size: 2.5rem;
+      text-align: center;
+
+      @include mobile{
+       font-size: 1.5rem;         
+      }
+    }
+  
+    .wrapper {
+      width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: normal;
+        align-content: normal;
+        gap: 10px;
+    }
+  
+    .skill-box1,
+    .skill-box2,
+    .skill-box3 {
+      flex: 1; 
+      display: flex;
+      flex-direction: column; 
+      height: auto; 
+      //   max-height: 700px;
+      border-radius: 10px;
+
+      @include tablet{
+        width: 30%;  
+      }
+
+      @include mobile{
+        width: 30%;  
+      }
+    }
+
+    .frontend,
+    .backend,
+    .hosting,
+    .frameworks,
+    .version-control{
+        flex-wrap: wrap; 
+        min-height: 0;
+        background-color: white;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 15px 5px;
+
+        @include mobile{
+          transform: none !important;
+        }
+
+        .card-title{
+          @include mobile{
+            font-size: 1rem; 
+          }
+        }
+
+        .custom-hr {
+            margin: 20px 0;
+            border: none;
+            height: 1px; 
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        }
+
+        img{
+            width: 80px;
+            height: 50px;
+            align-self: center;
+
+            @include mobile{
+              transform: none !important;
+            }
+
+        }
+        span{
+            font-size: 15px;
+            color: black;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+    }
+
+
+    // .skill-box2 > div,
+    // .skill-box3 > div {
+    //   // flex: 1; 
+    // }
+   
+  }
+  

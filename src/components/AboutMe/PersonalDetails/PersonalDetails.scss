@@ -1,0 +1,159 @@
+@import "src/app.scss";
+
+.card-border{
+    width: 100%;
+    height: 100%;
+    background-color: $green;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 15px;
+
+    @include mobile{
+        transform-style: unset !important;  
+        transform: unset !important;         
+    }
+
+    .card-body{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0c0c1d;
+        position: relative;
+        box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+
+        @include mobile{
+            transform: unset !important;
+            transform-style: unset !important;           
+        }
+    }
+}
+
+.personal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    // background-color: seashell;
+       
+        h1{
+            font-size: 2.5rem;
+            // color: black;
+            margin: 10px;
+
+            @include mobile{
+                font-size: 1.5em ;
+            }
+        }
+    
+        .imageContainer{
+            width: 550px;
+            height: 300px;
+            margin-top: 1rem;
+            margin-bottom: 0.7rem;
+            //need fix
+
+            @include tablet{
+                width: 100%;
+                height: 100%;
+            }
+            
+            @include mobile{
+                width: 100%;
+                height: 100%;
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                object-fit: contain;
+
+                @include tablet{
+                    object-fit: fill;
+                    border-radius: unset;
+                }
+
+                @include mobile{
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .text p {
+            font-size: 1.3rem; 
+            // margin-top: 1rem;
+            margin: 0 5px;
+            text-align: left;
+            line-height: 1.5;
+            font-family: 'Roboto', sans-serif; 
+            color: grey;
+
+            @include tablet{
+                font-size: 1.2rem; 
+                color: grey;
+            }
+            
+            @include mobile{
+                font-size: 1rem; 
+            }
+        }
+
+        .buttons{
+            width: 100%;
+            height: 50px;
+            display: flex;  
+            position: relative;
+            padding: 5px 10px;
+            justify-content: space-around;
+            align-items: center;
+            // flex-wrap: wrap;
+            margin-top: 1rem;
+
+            @include tablet{
+                display: flex;
+                
+                gap: 15px;
+             }
+
+            @include mobile{
+               display: flex;
+               flex-direction: row;
+               gap: 10px;
+            }
+
+            >a {
+                text-decoration: none; 
+            }
+            
+            > a > button {
+                cursor: pointer;
+                padding: 10px 20px;
+                background-color: transparent;
+                border-radius: 5px;
+        
+                @include tablet {
+                    padding: 8px 13px;
+                }
+            }
+        
+            > a:nth-of-type(1) > button {
+                color: yellow;
+                border: 1px solid yellow;
+            }
+        
+            > a:nth-of-type(2) > button {
+                color: cyan;
+                border: 1px solid cyan;
+            }
+        
+            > a:nth-of-type(3) > button {
+                color: greenyellow;
+                border: 1px solid greenyellow;
+            }
+
+        }
+}

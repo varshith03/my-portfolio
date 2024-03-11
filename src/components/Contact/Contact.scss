@@ -1,0 +1,121 @@
+@import "src/app.scss";
+
+.contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    .wrapper{
+        width: 1366px;
+        display: flex;
+        margin: auto;
+        // background-color: white;
+        overflow: hidden;
+
+        @include mobile{
+            width: 100%;
+            padding: 5px;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .text-container{
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            gap:40px;
+            padding: 20px;
+            margin-bottom: 40px;
+            @include mobile{
+               gap: 20px;
+            }
+
+            h1{
+                font-size: 100px;
+
+                @include mobile{
+                    font-size: 50px; 
+                }
+            }
+
+            .social-group{
+                display: flex;
+                align-items: center;
+
+                @include mobile{
+                    justify-content: center;
+                }
+
+                .social-icons {
+                    margin-right: 10px;
+                }
+            }   
+        }
+
+        
+        .form-container{
+            flex:1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            position: relative;
+
+            .phone-icon{ 
+                stroke: $green;
+                position: absolute;
+                margin: auto;
+                z-index: -1;
+                
+                svg{ 
+                    width:  75%;
+                    height: 75%;
+                    object-fit: contain;
+                }
+            }
+
+            form{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 20px;
+
+                .whiteBorder input { 
+                    color: white; 
+                } 
+
+                .whiteBorder{
+                    fieldset { 
+                        border-color: white; 
+                    } 
+                }
+
+                .whiteBorder:hover {
+                    fieldset {
+                        border-color: white !important;
+                    }
+                }
+                
+                .whiteBorder label {
+                    color: white;  
+                } 
+
+                button{
+                    width: 100%;
+                    padding: 10px;
+                    background-color: $green;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 1rem;
+                    color: white;
+                }
+
+            }
+        }
+    }
+}
