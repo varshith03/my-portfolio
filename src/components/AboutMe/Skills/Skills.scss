@@ -75,8 +75,10 @@
         }
 
         .card-title{
+          font-size: 1rem; 
           @include mobile{
-            font-size: 1rem; 
+            font-size: 0.8rem; 
+            word-wrap: break-word;
           }
         }
 
@@ -93,15 +95,22 @@
             align-self: center;
 
             @include mobile{
+              width: 100%;
               transform: none !important;
+              object-fit: contain;
             }
 
         }
-        span{
-            font-size: 15px;
-            color: black;
-            margin-bottom: 15px;
+        p{
+            font-size: 1.2rem;
+            // color: black;
+            margin-bottom: 5px;
             text-align: center;
+
+            @include mobile{
+              font-size: 0.8rem;
+              margin-bottom: unset;
+            }
         }
     }
 

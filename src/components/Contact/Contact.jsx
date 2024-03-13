@@ -62,35 +62,33 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(serviceId, templateId, formRef.current, publicKey)
-      .then(
-        () => {
-          // console.log("SUCCESS!");
-          toast.success("Email sent successfully!", {
-            position: "top-right",
-            autoClose: 3000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
-          formRef.current.reset();
-        },
-        (error) => {
-          // console.log("FAILED...", error.text);
-          toast.error("Failed to Send Email!", {
-            position: "top-right",
-            autoClose: 3000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
-        }
-      );
+    emailjs.sendForm(serviceId, templateId, formRef.current, publicKey).then(
+      () => {
+        // console.log("SUCCESS!");
+        toast.success("Email sent successfully!", {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+        formRef.current.reset();
+      },
+      (error) => {
+        // console.log("FAILED...", error.text);
+        toast.error("Failed to Send Email!", {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      }
+    );
   };
 
   return (
@@ -132,7 +130,6 @@ const Contact = () => {
                 <ReactTooltip
                   id={`my-tooltip-${index + 1}`}
                   place={index % 2 === 0 ? "top" : "bottom"}
-                  variant="info"
                   content={data.tooltip}
                   style={{ background: data.color }}
                 />

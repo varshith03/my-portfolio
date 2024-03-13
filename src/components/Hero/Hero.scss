@@ -62,7 +62,7 @@
                 }
 
                 @include mobile{
-                    font-size: 40px;
+                    font-size: 30px;
                 }
 
             }
@@ -84,6 +84,10 @@
 
                     &:hover a{
                         color: black;
+                    }
+
+                    @include mobile{
+                        padding: 8px;
                     }
                 }
             }
@@ -115,6 +119,7 @@
 
                 @include mobile{
                     height: 100%;
+                    object-fit: contain;
                 }
                 
               }

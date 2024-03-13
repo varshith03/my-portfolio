@@ -130,8 +130,8 @@
                 background-color: transparent;
                 border-radius: 5px;
         
-                @include tablet {
-                    padding: 8px 13px;
+                @include mobile {
+                    padding: 5px;
                 }
             }
         

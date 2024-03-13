@@ -46,7 +46,7 @@ const Skills = () => {
                         rel="noopener noreferrer"
                       >
                         <img src={tool.imgSrc} alt={tool.imgAltText} />
-                        <div>{tool.skillName}</div>
+                        <p>{tool.skillName}</p>
                       </a>
                     </motion.div>
                   ))}

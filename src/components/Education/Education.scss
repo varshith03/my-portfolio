@@ -32,7 +32,11 @@
             font-size: 50px;
             font-weight: 100;
             margin-bottom: 10px;
+            text-align: center;
             // opacity: 0.5;
+            @include mobile{
+                font-size: 30px;
+            }
         }
 
         .flip-card{
@@ -96,18 +100,31 @@
 
                         h2{
                             font-size: 50px;
+                            
+                            @include mobile{
+                                font-size: 30px;
+                            }
                         }
 
                         h3{
                             font-size: 40px;
+                            @include mobile{
+                                font-size: 20px;
+                            }
                         }
 
                         h4{
                             font-size: 30px;
+                            @include mobile{
+                                font-size: 15px;
+                            }
                         }
 
                         h5{
                             font-size: 20px;
+                            @include mobile{
+                                font-size: 12px;
+                            }
                         }
 
                     }
