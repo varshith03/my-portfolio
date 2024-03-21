@@ -64,14 +64,14 @@ const Single = ({ item }) => {
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              onClick={() => window.open(item.code, "_blank")}
+              onClick={() => window.open(item.deployment, "_blank")}
             >
               See Demo
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              onClick={() => window.open(item.deployment, "_blank")}
+              onClick={() => window.open(item.code, "_blank")}
             >
               See Code
             </motion.button>
