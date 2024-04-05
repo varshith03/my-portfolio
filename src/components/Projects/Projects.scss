@@ -53,6 +53,8 @@
             border: 1px solid $green;
 
             @include mobile{
+                max-height: 200px;
+                margin-top: calc(100vh - 80vh);
                 border: none;
             }
             
