@@ -90,6 +90,28 @@
                 color: grey;
             }
 
+            .badge-container {
+                display: flex;
+              
+                @include mobile{
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    
+                    .badge {
+                        flex: 0 0 calc(33.33% - 10px);
+                        margin-bottom: 10px;
+                    }
+                }
+              
+              .badge {
+                background-color: #007bff;
+                color: #ffffff;
+                padding: 5px 10px;
+                margin-right: 10px;
+                border-radius: 5px;
+              }
+            }
+
             .button-container{
                 display: flex;
                 gap: 25px;
