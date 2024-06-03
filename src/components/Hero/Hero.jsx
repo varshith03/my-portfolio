@@ -112,7 +112,8 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <img src="/hero.png" alt="" />
+          {/* <img src="/hero.png" alt="" /> */}
+          <img src="https://res.cloudinary.com/dg3vsquxp/image/upload/v1717390366/website%20images/portfolio/hero_mattcb.png" alt="My Photo" />
         </motion.div>
       </div>
     </div>
