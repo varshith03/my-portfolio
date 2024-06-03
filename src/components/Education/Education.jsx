@@ -84,7 +84,7 @@ const Education = () => {
                 </motion.h5>
               </div>
               <div className="image-container">
-                <img src="/mit.png" alt="" className="href" />
+                <img src="https://res.cloudinary.com/dg3vsquxp/image/upload/v1717391236/website%20images/portfolio/mit_lr7agd.png" alt="" className="href" />
               </div>
             </motion.div>
             <div className="flip-card-back">
@@ -101,7 +101,7 @@ const Education = () => {
                 </motion.h5>
               </div>
               <div className="image-container">
-                <img src="/aloysius.png" alt="" className="href" />
+                <img src="https://res.cloudinary.com/dg3vsquxp/image/upload/v1717391234/website%20images/portfolio/a1_bwnv8e.png" alt="" className="href" />
               </div>
             </div>
           </motion.div>

@@ -51,7 +51,9 @@ const Parallax = ({ type }) => {
         style={{
           y: xBg,
           backgroundImage: `url(${
-            type === "aboutme" ? "planets.png" : "sun.png"
+            type === "aboutme"
+              ? "https://res.cloudinary.com/dg3vsquxp/image/upload/v1717391235/website%20images/portfolio/planets_kbfb5k.png"
+              : "https://res.cloudinary.com/dg3vsquxp/image/upload/v1717391237/website%20images/portfolio/sun_mgyxzb.png"
           })`,
         }}
       ></motion.div>

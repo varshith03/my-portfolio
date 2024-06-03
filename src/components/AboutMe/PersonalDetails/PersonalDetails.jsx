@@ -86,18 +86,24 @@ const PersonalDetails = () => {
         >
           <motion.h1 variants={variants}>ABOUT ME</motion.h1>
           <motion.div className="imageContainer" variants={variants}>
-            <img src="/dev-avatar.png" alt="" />
+            <img
+              src="https://res.cloudinary.com/dg3vsquxp/image/upload/v1717391236/website%20images/portfolio/dev-avatar_zb9jg8.png"
+              alt=""
+            />
           </motion.div>
           <motion.div className="text" variants={variants}>
             <motion.p variants={variants}>
-              Web Developer with expertise of React.js, Node.js, Redux, HTML and
-              CSS. currently learning React Native for Mobile Application.
+              Web Developer with expertise in React.js, Node.js, Redux, HTML,
+              CSS, and Next.js.Passionate programmer and avid learner, born and
+              raised in Mangalore, Karnataka.
             </motion.p>
             <br />
             <motion.p variants={variants}>
-              I am passionate programmer and a learner, born and brought up in
-              Mangalore, Karnataka.Currently, I am working as Software Developer
-              Intern in INDSAC SOFTECH
+              Currently working as a Software Developer Intern at INDSAC
+              SOFTECH, where I continuously strive to enhance my skills and
+              contribute to innovative projects. In my spare time, I enjoy
+              exploring the latest trends in web development and expanding my
+              knowledge through hands-on projects.
             </motion.p>
           </motion.div>
           <motion.div className="buttons" variants={variants}>
